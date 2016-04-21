@@ -12,11 +12,6 @@
   const url = process.argv[3]
   const subject = process.argv[4] || 'Test'
 
-  const content = [{
-    name: template,
-    content: ''
-  }]
-
   request.get(url, function (error, response, body) {
     if (error) {
       console.error('index.js - request error', error)
