@@ -8,11 +8,11 @@
 
   console.log('index.js - ', process.argv)
 
-  let template = process.argv[2]
-  let url = process.argv[3]
-  let subject = process.argv[4] || 'Test'
+  const template = process.argv[2]
+  const url = process.argv[3]
+  const subject = process.argv[4] || 'Test'
 
-  let content = [{
+  const content = [{
     name: template,
     content: ''
   }]
@@ -49,7 +49,7 @@
         }],
         attachments: [{
           type: 'image/png',
-          name: 'photo.png',
+          name: 'picture.png',
           content: img
         }]
       }
