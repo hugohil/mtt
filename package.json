@@ -1,0 +1,17 @@
+{
+  "name": "mandrill-tester",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "cp config.sample.js config.js",
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hugohil",
+  "license": "MIT",
+  "dependencies": {
+    "mandrill-api": "^1.0.45",
+    "request": "^2.72.0"
+  }
+}
